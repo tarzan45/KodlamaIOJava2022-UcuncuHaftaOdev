@@ -2,10 +2,17 @@ package odev1;
 
 public class CustomerManager
 {
-	public void Add( ) {System.out.println("Müşteri eklendi.");}
+	private ICustomerDal customerDal;
 	
-	public void Remove() {System.out.println("Müşteri silindi.");}
+	public CustomerManager(ICustomerDal customerDal) {this.customerDal=customerDal;}
 	
-	public void Update() {System.out.println("Müşteri güncellendi.");}
+	public void add( ) 
+	{
+		customerDal.add();
+	}
+	
+	public void remove() {System.out.println("Müşteri silindi.");}
+	
+	public void update() {System.out.println("Müşteri güncellendi.");}
 
 }
