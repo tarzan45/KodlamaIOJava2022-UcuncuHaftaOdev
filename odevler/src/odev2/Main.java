@@ -12,9 +12,13 @@ public class Main {
 		
 		
 		ProductManager productManager=new ProductManager();
-		productManager.Add(product);
+	//	productManager.Add(product);
 		
-		System.out.println(product.getKod());
+//		System.out.println(product.getKod());
+		
+		DortIslem dortislem=new DortIslem();
+		System.out.println(dortislem.topla(2, 3));
+		System.out.println(dortislem.topla2(2, 3, 7));
 		
 		
 
