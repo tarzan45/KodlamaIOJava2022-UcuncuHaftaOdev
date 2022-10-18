@@ -3,7 +3,7 @@ package odev2;
 public class Main {
 
 	public static void main(String[] args) {
-		GetterAndSetter product=new GetterAndSetter();
+	/*	GetterAndSetter product=new GetterAndSetter();
 		product.setName("Laptop");
 		product.setId(1);
 		product.setDescription("Asus Laptop");
@@ -18,7 +18,15 @@ public class Main {
 		
 		DortIslem dortislem=new DortIslem();
 		System.out.println(dortislem.topla(2, 3));
-		System.out.println(dortislem.topla2(2, 3, 7));
+		System.out.println(dortislem.topla2(2, 3, 5)); */
+		
+		Customer customer=new Customer();
+		Employee employee=new Employee();
+		
+		EmployeeManager employeeManager=new EmployeeManager();
+		CustomerManager customerManager=new CustomerManager();
+		employeeManager.BestEmployee();
+	
 		
 		
 
