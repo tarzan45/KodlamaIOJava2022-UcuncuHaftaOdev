@@ -50,15 +50,23 @@ public class Main {
 	/*	OgretmenKrediManager ogretmenKrediManager=new OgretmenKrediManager();
 		System.out.println(ogretmenKrediManager.Hesapla(1000)); */
 		
-		BaseKrediManager[] krediManagers=new BaseKrediManager[]
+	/*	BaseKrediManager[] krediManagers=new BaseKrediManager[]
 				{new OgretmenKrediManager(),new TarimKrediManager(),new OgrenciKrediManager()};
 		
 		for(BaseKrediManager krediManager:krediManagers)
 		{
 			System.out.println(krediManager.Hesapla(1000));
 			
-		}
+		} */
 		
+		WomanGameCalculator womanGameCalculator=new WomanGameCalculator();
+		womanGameCalculator.hesapla();
+		womanGameCalculator.gameOver();
+		
+		GameCalculator gameCalculator=new WomanGameCalculator();
+		
+				
+			
 		
 		
 		
